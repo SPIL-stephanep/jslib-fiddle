@@ -1,0 +1,23 @@
+{
+    "name": "jslib-fiddle",
+    "author": "Stephane P. Pericat <stephane.pericat@spilgames.com>",
+    "version": "0.1.0",
+    "license": "Copyright 2013, Spil Games",
+    "private": true,
+    "analyze": false,
+    "keywords": [
+        "jslib",
+        "fiddle"
+    ],
+    "scripts": {
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SPIL-stephanep/jslib-fiddle.git"
+    },
+    dependencies: {},
+    "engines": {
+        "node": ">=0.8"
+    }
+}
