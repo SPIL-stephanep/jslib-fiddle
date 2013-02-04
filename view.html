@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSLib Fiddle</title>
+	<script>
+		var SpilGames = function(a){return function(){a.push(arguments);return a}}(SpilGames||[]);
+		(function (document) {
+			var jslibScript = document.createElement('script'),
+			firstScript = document.getElementsByTagName('script')[0];
+			jslibScript.src = '//api-stg.spilgames.com/js';
+			jslibScript.async = true;
+			firstScript.parentNode.insertBefore(jslibScript, firstScript);
+		}(window.document));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
