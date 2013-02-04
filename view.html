@@ -2,18 +2,27 @@
 <html>
 <head>
 	<title>JSLib Fiddle</title>
+	<link href="css/fiddle.css" rel="stylesheet" type="text/css" />
 	<script>
 		var SpilGames = function(a){return function(){a.push(arguments);return a}}(SpilGames||[]);
 		(function (document) {
 			var jslibScript = document.createElement('script'),
 			firstScript = document.getElementsByTagName('script')[0];
-			jslibScript.src = '//api-stg.spilgames.com/js';
+			jslibScript.src = '//api-stg.spilgames.com/js/spapi?sitedid=1&channelid=1';
 			jslibScript.async = true;
 			firstScript.parentNode.insertBefore(jslibScript, firstScript);
 		}(window.document));
 	</script>
+	<script src="js/fiddle.js"></script>
 </head>
 <body>
-
+	<div id="wrapper">
+		&nbsp;
+	</div>
+	<script>
+		SpilGames(['Fiddle'], function(Fiddle) {
+			console.log(Fiddle);
+		});
+	</script>
 </body>
 </html>
